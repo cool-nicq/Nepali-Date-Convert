@@ -129,7 +129,7 @@ strong {
 <h1>Nepali To English.</h1>
 <?php 
 	$ndate = new Nepali_Calendar();
-	$ndate = $ndate->eng_to_nep(gmdate(Y),gmdate(m),gmdate(d));
+	$ndate = $ndate->eng_to_nep(gmdate('Y'),gmdate('m'),gmdate('d'));
 ?>
 <form method="get" name="cnv_to_english" action="<?php echo $_SERVER['PHP_SELF'] ?>">
 	<input type="hidden" value="to_english" name="cnv" />
